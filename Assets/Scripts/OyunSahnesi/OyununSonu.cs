@@ -7,6 +7,8 @@ public class OyununSonu : MonoBehaviour
 
     public GameObject DönenBüyükÇember;
     public GameObject SpawnLokasyonu;
+
+  
     public void OyunuBitir()
     {
         DönenBüyükÇember.GetComponent<DonenBuyukCember>().enabled = false;

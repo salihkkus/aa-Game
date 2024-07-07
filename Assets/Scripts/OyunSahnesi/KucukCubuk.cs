@@ -11,6 +11,8 @@ public class KucukCubuk : MonoBehaviour
 
   public GameObject yönetici;
 
+  public static bool oyunbitti;
+
     void Start()
     {
         yönetici = GameObject.FindGameObjectWithTag("Yonetici");
@@ -35,6 +37,7 @@ public class KucukCubuk : MonoBehaviour
 
     if(col.gameObject.tag == "KucukCember") 
     {
+        oyunbitti = true;
         yönetici.GetComponent<OyununSonu>().OyunuBitir();
     }
 
