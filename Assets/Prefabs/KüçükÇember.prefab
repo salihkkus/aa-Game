@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 7304226222030507432}
   m_Layer: 0
   m_Name: "K\xFC\xE7\xFCk\xC7ember"
-  m_TagString: Untagged
+  m_TagString: KucukCember
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,5 +292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae039052ac359b8409b6e44509fb5611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "h\u0131z": 40
+  "h\u0131z": 70
   "hareketk\u0131s\u0131tl\u0131m\u0131": 0
+  "y\xF6netici": {fileID: 0}

@@ -9,9 +9,11 @@ public class KucukCubuk : MonoBehaviour
 
   public bool hareketkısıtlımı;
 
+  public GameObject yönetici;
 
     void Start()
     {
+        yönetici = GameObject.FindGameObjectWithTag("Yonetici");
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -28,8 +30,14 @@ public class KucukCubuk : MonoBehaviour
      if(col.gameObject.tag == "DonenBuyukCember")
     {
         transform.SetParent(col.transform);
-     hareketkısıtlımı = true;
+        hareketkısıtlımı = true;
     }
+
+    if(col.gameObject.tag == "KucukCember") 
+    {
+        yönetici.GetComponent<OyununSonu>().OyunuBitir();
+    }
+
 }
 
 }
